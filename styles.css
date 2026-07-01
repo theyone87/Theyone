@@ -135,7 +135,7 @@ button:hover {
 }
 
 @media (max-width: 1024px) {
-  .hero {
+  .theyone {
     flex-direction: column;
     padding: 40px;
     min-height: auto;
@@ -160,7 +160,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .theyone {
     padding: 24px;
   }
 
