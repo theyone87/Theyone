@@ -5,195 +5,129 @@
 }
 
 body {
-    background: #f7f0f7;
+    background: #f6eef7;
     font-family: 'Open Sans', sans-serif;
 }
 
-.page {
-    max-width: 1440px;
-    min-height: 100vh;
-    margin: auto;
-    padding: 40px 60px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+.wrapper {
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.left-side {
-    width: 48%;
-}
-
-.right-side {
-    width: 52%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.right-side img {
-    width: 100%;
-    max-width: 760px;
-    height: auto;
+.left {
+    position: absolute;
+    left: 90px;
+    top: 60px;
+    width: 580px;
+    z-index: 2;
 }
 
 .logo {
-    width: 250px;
+    width: 240px;
     margin-bottom: 60px;
 }
 
 h1 {
     font-family: 'Dela Gothic One', cursive;
-    font-size: 72px;
-    line-height: 1.1;
-    margin-bottom: 28px;
+    font-size: 78px;
+    line-height: 1.05;
+    margin-bottom: 24px;
 }
 
 .subtitle {
     font-size: 30px;
     color: #555;
     line-height: 1.4;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
 }
 
 .card {
+    width: 540px;
     background: white;
-    padding: 32px;
-    border-radius: 30px;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.06);
-    max-width: 540px;
+    border-radius: 28px;
+    padding: 30px;
 }
 
-.card-top {
+.card-header {
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    gap: 18px;
 }
 
-.card-top img {
-    width: 70px;
+.card-header img {
+    width: 72px;
+    height: 72px;
 }
 
-.card h2 {
+h2 {
     font-family: 'Dela Gothic One', cursive;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.35;
 }
 
 .card p {
-    margin: 28px 0;
+    margin-top: 24px;
     font-size: 20px;
     line-height: 1.5;
     color: #555;
 }
 
-.cta-button {
+.button-wrap {
     position: relative;
-    display: block;
+    width: 420px;
+    margin-top: 28px;
+}
+
+.button-wrap img {
     width: 100%;
 }
 
-.cta-button img {
-    width: 100%;
-    display: block;
-}
-
-.cta-button span {
+.button-wrap span {
     position: absolute;
     inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
-    color: black;
 }
 
 .email {
     display: flex;
-    gap: 16px;
+    gap: 18px;
     margin-top: 36px;
     align-items: center;
 }
 
 .email img {
-    width: 60px;
+    width: 62px;
 }
 
 .email span {
     display: block;
     color: #777;
-    margin-bottom: 6px;
 }
 
 .email a {
-    text-decoration: none;
-    color: #7f3eff;
     font-size: 22px;
+    color: #7e41ff;
+    text-decoration: none;
 }
 
 .footer {
-    margin-top: 50px;
-    font-size: 22px;
+    margin-top: 45px;
+    font-size: 24px;
     color: #444;
 }
 
-@media (max-width: 1024px) {
-    .page {
-        flex-direction: column;
-        padding: 40px;
-    }
-
-    .left-side,
-    .right-side {
-        width: 100%;
-    }
-
-    .right-side {
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    h1 {
-        font-size: 56px;
-    }
-
-    .subtitle {
-        font-size: 24px;
-    }
+.right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .page {
-        padding: 20px;
-    }
-
-    .logo {
-        width: 180px;
-    }
-
-    h1 {
-        font-size: 34px;
-    }
-
-    .subtitle {
-        font-size: 18px;
-    }
-
-    .card {
-        padding: 22px;
-    }
-
-    .card h2 {
-        font-size: 16px;
-    }
-
-    .card p {
-        font-size: 16px;
-    }
-
-    .email a {
-        font-size: 18px;
-    }
+.right img {
+    width: 760px;
 }
